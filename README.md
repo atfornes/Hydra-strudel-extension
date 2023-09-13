@@ -9,14 +9,17 @@ await loadScript("https://hydra-strudel.glitch.me/hydra-strudel.js")
 ```
 
 ### Example
-[live](https://hydra.ojack.xyz/dev/?code=JTJGJTJGJTIwbGljZW5zZWQlMjB3aXRoJTIwQ0MlMjBCWS1OQy1TQSUyMDQuMCUyMGh0dHBzJTNBJTJGJTJGY3JlYXRpdmVjb21tb25zLm9yZyUyRmxpY2Vuc2VzJTJGYnktbmMtc2ElMkY0LjAlMkYlMEFhd2FpdCUyMGxvYWRTY3JpcHQoJTIyaHR0cHMlM0ElMkYlMkZoeWRyYS1zdHJ1ZGVsLmdsaXRjaC5tZSUyRmh5ZHJhLXN0cnVkZWwuanMlMjIpJTBBJTBBJTBBJTJGJTJGbXlQYXR0ZXJuJTIwJTNEJTIwbWluaSgnMCUyMDEwJTIwJTVCMiUyMDUxJTVEKjQnKS5zbG93KDIpJTBBJTJGJTJGbm90ZShteVBhdHRlcm4pLnBsYXkoKSUwQSUyRiUyRm9zYygoKSUyMCUzRCUzRSUyMDEwJTIwKiUyMG15UGF0dGVybi52YWx1ZSgpKS5vdXQoKSUwQSUyRiUyRnNodXNoKCklMEElMEElMEElMEE%3D)
+[live](https://hydra.ojack.xyz/?code=YXdhaXQlMjBsb2FkU2NyaXB0KCUyMmh0dHBzJTNBJTJGJTJGY2RuLmpzZGVsaXZyLm5ldCUyRmdoJTJGYXRmb3JuZXMlMkZIeWRyYS1zdHJ1ZGVsLWV4dGVuc2lvbiU0MDAuMS4xJTJGaHlkcmEtc3RydWRlbC5qcyUyMiklMEElMEElMkYlMkYlMjBteVBhdHRlcm4lMjAlM0QlMjBtaW5pKCcwJTIwMTAlMjAlNUIyJTIwNTElNUQqNCcpLnNsb3coMiklMEElMkYlMkYlMjBub3RlKG15UGF0dGVybikucGxheSgpJTBBJTJGJTJGJTIwb3NjKCgpJTIwJTNEJTNFJTIwMTAlMjAqJTIwbXlQYXR0ZXJuLnZhbHVlKCkpLm91dCgpJTBBJTBBJTJGJTJGJTIwU3RvcCUyMHNvdW5kJTNBJTBBJTJGJTJGJTIwQ3RybCUyMCUyQiUyMC4lMEElMkYlMkYlMjBvciUwQSUyRiUyRiUyMHNodXNoKCk%3D)
+
 ```javascript
-await loadScript("https://hydra-strudel.glitch.me/hydra-strudel.js")
+await loadScript("https://cdn.jsdelivr.net/gh/atfornes/Hydra-strudel-extension@0.1.1/hydra-strudel.js")
 
+// myPattern = mini('0 10 [2 51]*4').slow(2)
+// note(myPattern).play()
+// osc(() => 10 * myPattern.value()).out()
 
-//myPattern = mini('0 10 [2 51]*4').slow(2)
-//note(myPattern).play()
-//osc(() => 10 * myPattern.value()).out()
-//shush()
-
+// Stop sound:
+// Ctrl + .
+// or
+// shush()
 ```
