@@ -20,10 +20,3 @@ await loadScript("https://hydra-strudel.glitch.me/hydra-strudel.js")
 //shush()
 
 ```
-### To do:
-
-- make strings evaluate directly
-- make always live?
-- `hush()` in HYDRA not working
-
-#

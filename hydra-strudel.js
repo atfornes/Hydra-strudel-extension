@@ -1,6 +1,7 @@
 // licensed with CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 async function initHydraStrudel() {
+  const hydraHush = hush;
   const strudel = await import("https://cdn.skypack.dev/@strudel.cycles/core");
   const webaudio = await import(
     "https://cdn.skypack.dev/@strudel.cycles/webaudio"
@@ -36,6 +37,8 @@ async function initHydraStrudel() {
   };
   window.strudel = strudel
   shush = () => scheduler?.stop();
+
+  hush = hydraHush;
 
   document.addEventListener('keydown', function(event) {
     console.log(event, event.key)
