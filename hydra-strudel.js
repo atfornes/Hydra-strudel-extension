@@ -36,11 +36,26 @@ async function initHydraStrudel() {
   };
   window.strudel = strudel
   shush = () => scheduler?.stop();
+
+  document.addEventListener('keydown', function(event) {
+    console.log(event, event.key)
+    if (event.ctrlKey && event.key === '.') {
+      shush();
+    }
+  });
+
+  await samples(
+    'https://strudel.tidalcycles.org/tidal-drum-machines.json',
+    'github:ritchse/tidal-drum-machines/main/machines/'
+  );
+  await samples(
+    'https://strudel.tidalcycles.org/EmuSP12.json',
+    'https://strudel.tidalcycles.org/EmuSP12/'
+  );
+
   console.log("Strudel loaded!");
 }
 
 if (window.strudel === undefined) {
   initHydraStrudel();
 }
-
-

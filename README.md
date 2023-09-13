@@ -10,7 +10,7 @@ await loadScript("https://hydra-strudel.glitch.me/hydra-strudel.js")
 
 ### Example
 [live](https://hydra.ojack.xyz/dev/?code=JTJGJTJGJTIwbGljZW5zZWQlMjB3aXRoJTIwQ0MlMjBCWS1OQy1TQSUyMDQuMCUyMGh0dHBzJTNBJTJGJTJGY3JlYXRpdmVjb21tb25zLm9yZyUyRmxpY2Vuc2VzJTJGYnktbmMtc2ElMkY0LjAlMkYlMEFhd2FpdCUyMGxvYWRTY3JpcHQoJTIyaHR0cHMlM0ElMkYlMkZoeWRyYS1zdHJ1ZGVsLmdsaXRjaC5tZSUyRmh5ZHJhLXN0cnVkZWwuanMlMjIpJTBBJTBBJTBBJTJGJTJGbXlQYXR0ZXJuJTIwJTNEJTIwbWluaSgnMCUyMDEwJTIwJTVCMiUyMDUxJTVEKjQnKS5zbG93KDIpJTBBJTJGJTJGbm90ZShteVBhdHRlcm4pLnBsYXkoKSUwQSUyRiUyRm9zYygoKSUyMCUzRCUzRSUyMDEwJTIwKiUyMG15UGF0dGVybi52YWx1ZSgpKS5vdXQoKSUwQSUyRiUyRnNodXNoKCklMEElMEElMEElMEE%3D)
-```javascript 
+```javascript
 await loadScript("https://hydra-strudel.glitch.me/hydra-strudel.js")
 
 
@@ -22,12 +22,8 @@ await loadScript("https://hydra-strudel.glitch.me/hydra-strudel.js")
 ```
 ### To do:
 
-- only run after load // fix loading error
-- why not synced?
-- add key command for stopping sound
 - make strings evaluate directly
-- check whether already loaded and only load once
 - make always live?
 - `hush()` in HYDRA not working
 
-# 
+#
