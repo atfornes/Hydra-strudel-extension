@@ -41,7 +41,6 @@ async function initHydraStrudel() {
   hush = hydraHush;
 
   document.addEventListener('keydown', function(event) {
-    console.log(event, event.key)
     if (event.ctrlKey && event.key === '.') {
       shush();
     }
