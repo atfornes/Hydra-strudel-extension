@@ -60,5 +60,22 @@ async function initHydraStrudel() {
     'https://strudel.tidalcycles.org/EmuSP12/'
   );
 
+  // enabling to use pattern functions to stringsm converting them to Patterns:
+  // "10 20".slow(2)
+  //  is the same as:
+  //  mini("10 20").slow(2)
+  Object.setPrototypeOf(String.prototype, Pattern.prototype);
+
+  // function to use inside hydra code, syntax sugar of:
+  // () => pattern.value(); // for Patterns
+  // () => window.mini(pattern).value(); // for strings that have not been converted to Patterns
+  window.P = (pattern)=> {
+    if (pattern instanceof Pattern){
+      return ()=> pattern.value();
+    } else {
+      return ()=> window.mini(pattern).value();
+    }
+  }
+
   console.log("Strudel loaded!");
 }

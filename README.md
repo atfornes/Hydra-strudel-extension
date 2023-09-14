@@ -15,9 +15,9 @@ await loadScript("https://cdn.jsdelivr.net/gh/atfornes/Hydra-strudel-extension@l
 await loadScript("https://cdn.jsdelivr.net/gh/atfornes/Hydra-strudel-extension@latest/hydra-strudel.js")
 await initHydraStrudel()
 
-myPattern = mini('0 10 [2 51]*4').slow(2)
+myPattern = '0 10 [2 51]*4'.slow(2)
 note(myPattern).play()
-osc(() => 10 * myPattern.value()).out()
+osc(P(myPattern)).out()
 
 // Stop sound:
 // Ctrl + .
