@@ -4,6 +4,8 @@ async function initHydraStrudel() {
   if (window.strudel !== undefined) {
     return;
   }
+  // to avoid multiple calls
+  window.strudel = "";
   const hydraHush = hush;
   const strudel = await import("https://cdn.skypack.dev/@strudel.cycles/core");
   const webaudio = await import(
