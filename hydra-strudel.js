@@ -1,6 +1,9 @@
 // licensed with CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 async function initHydraStrudel() {
+  if (window.strudel !== undefined) {
+    return;
+  }
   const hydraHush = hush;
   const strudel = await import("https://cdn.skypack.dev/@strudel.cycles/core");
   const webaudio = await import(
@@ -56,8 +59,4 @@ async function initHydraStrudel() {
   );
 
   console.log("Strudel loaded!");
-}
-
-if (window.strudel === undefined) {
-  initHydraStrudel();
 }
