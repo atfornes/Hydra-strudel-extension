@@ -52,12 +52,12 @@ async function initHydraStrudel() {
   });
 
   await samples(
-    'https://strudel.tidalcycles.org/tidal-drum-machines.json',
+    'https://cdn.jsdelivr.net/gh/tidalcycles/strudel/website/public/tidal-drum-machines.json',
     'github:ritchse/tidal-drum-machines/main/machines/'
   );
   await samples(
-    'https://strudel.tidalcycles.org/EmuSP12.json',
-    'https://strudel.tidalcycles.org/EmuSP12/'
+    'https://cdn.jsdelivr.net/gh/tidalcycles/strudel/website/public/EmuSP12.json',
+    'https://cdn.jsdelivr.net/gh/tidalcycles/strudel/website/public/EmuSP12/'
   );
 
   // enabling to use pattern functions to stringsm converting them to Patterns:
